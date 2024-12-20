@@ -5,7 +5,9 @@
 Chared is a tool for detecting the character encoding of a text in a known language. The language of the text has to be specified as an input parameter so that correspondent language model can be used. The package contains models for a wide range of languages. In general, it should be more accurate than character encoding detection algorithms with no language constraints.
 
 The original code is available from http://code.google.com/p/chared/
+
 This fork adjusts the code for python3.
+
 
 
 ## Installation
@@ -30,7 +32,7 @@ For usage information see: `chared --help` and `chared-learn --help`
 
 ## Python API
 
-```
+```python
 import urllib2
 import chared.detector
 page = urllib.urlopen('http://nlp.fi.muni.cz/cs/nlplab').read()
@@ -43,19 +45,3 @@ cz_model.classify(page) ['utf_8']
 
 This software is developed at the Natural Language Processing Centre of Masaryk University in Brno with a financial support from PRESEMT and Lexical Computing Ltd, a corpus tool company.
 
-
-
-
-Prerequisites:
-    Python (>=2.6)
-    lxml (>=2.2.4)
-
-To install the package type:
-    pip install .
-
-For usage information see:
-    chared --help
-    chared-learn --help
-
-More information can be found online at:
-    <http://code.google.com/p/chared/>
