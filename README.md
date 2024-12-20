@@ -33,12 +33,13 @@ For usage information see: `chared --help` and `chared-learn --help`
 ## Python API
 
 ```python
-import urllib2
+import urllib.request
 import chared.detector
-page = urllib.urlopen('http://nlp.fi.muni.cz/cs/nlplab').read()
+page = urllib.request.urlopen('http://nlp.fi.muni.cz/cs/nlplab').read()
 cz_model_path = chared.detector.get_model_path('czech')
 cz_model = chared.detector.EncodingDetector.load(cz_model_path)
-cz_model.classify(page) ['utf_8']
+cz_model.classify(page)
+['utf_8']
 ```
 
 ## Acknowledgements

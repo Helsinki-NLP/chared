@@ -11,7 +11,7 @@ import logging
 import os
 import re
 import sys
-import urllib
+import urllib.request
 import urllib.error
 
 
@@ -97,7 +97,7 @@ def main():
             #read the input document
             try:
                 if '://' in input_file:
-                    fp = urllib.urlopen(input_file)
+                    fp = urllib.request.urlopen(input_file)
                 else:
                     fp = open(input_file, 'rb')
                 document = fp.read()
