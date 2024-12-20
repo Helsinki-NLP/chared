@@ -25,7 +25,7 @@ pip install .
 Detect the character encoding for a file or URL:
 `chared -m czech http://nlp.fi.muni.cz/cs/nlplab`
 
-Create a custom character encoding detection model from a collection of HTML pages (e.g. for Swahili): `chared-learn -o swahili.edm swahili_pages/*.html ...` or if you have a sample text in Swahili (plain text, UTF-8) and want to apply language filtering on the input HTML files (recommended): chared-learn -o swahili.edm -S swahili_sample.txt swahili_pages/*.html
+Create a custom character encoding detection model from a collection of HTML pages (e.g. for Swahili): `chared-learn -o swahili.edm swahili_pages/*.html ...` or if you have a sample text in Swahili (plain text, UTF-8) and want to apply language filtering on the input HTML files (recommended): `chared-learn -o swahili.edm -S swahili_sample.txt swahili_pages/*.html`
 
 For usage information see: `chared --help` and `chared-learn --help`
 
