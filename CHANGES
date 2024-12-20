@@ -1,5 +1,8 @@
 = Changelog for chared =
 
+== v1.2.2 (20 Dec 2024) ==
+ * adjust detector code to python3
+
 == v1.2.1 (3 Jan 2013) ==
  * BUGFIX: Opening encoding models in the binary mode.
 
